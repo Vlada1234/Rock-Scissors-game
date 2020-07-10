@@ -1,0 +1,117 @@
+/******************** Body *********************/
+body {
+    font-family: "Montserrat";
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: linear-gradient(-55deg,#F17C58,#E94584,#24AADB,#27DBB1,#FFDC18,#FF3706);
+    background-size: 600% 100%;
+    animation: Gradient 15s ease infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Gradient {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0 50%;
+    }
+
+}
+
+/****************** Cards **********************/
+.cards {
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 30px;
+}
+
+.cards h1 {
+    font-size: 50px;
+    color: white;
+    margin: 0 0 30px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.content .fas {
+    font-size: 70px;
+    margin: 16px 0;
+}
+
+.content {
+    flex: 1 1 100%;
+
+}
+
+.content:hover {
+    border-color: white;
+    color: white;
+}
+
+.content-1:hover{
+    border-color: #1DA1F2;
+    background: #1DA1F2;
+}
+  
+.content-2:hover {
+    border-color: #dc143c;
+    background: #dc143c;
+}
+
+.content-3:hover {
+    border-color: #008b8b;
+    background: #008b8b;
+}
+
+.content h2 {
+    font-size: 30px;
+    margin: 16px 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.content p {
+    font-size: 17px;
+}
+
+.content #myButton {
+    margin: 22px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 25px;
+}
+
+.content #myButton:hover {
+    border-radius: 4px;
+
+}
+
+@media (max-width: 900px)  {
+    .services {
+        display: flex;
+        flex-direction: column;
+    }
+}
