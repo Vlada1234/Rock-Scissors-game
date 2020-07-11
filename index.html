@@ -12,6 +12,7 @@
 
     <!-- Javascript link -->
     <script src = "javascript/myscripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     <!-- Bootstrap Scripts -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -35,7 +36,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Rock Scissors Paper</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button  class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       
@@ -56,19 +57,19 @@
                 <i class="fas fa-hand-scissors"></i>
                 <h2>Scissors</h2>
                 <p>Scissors cut paper but chrashes on rock!</p>
-                <button id ="myButton" value="Submit"  type="button" class="btn btn-outline-light btn-lg submit-button">Submit</button>
+                <button id ="Scissors" onclick="main(this.id)"  value="Scissors"  type="button"  class="btn btn-outline-light btn-lg submit-button">Submit</button>
             </div>
             <div class="content content-2">
                 <i class="fas fa-hand-rock"></i>
                 <h2>Rock</h2>
                 <p>Rock chrashes scissors but paper covers rock!</p>
-                <button id ="myButton" value="Submit"  type="button" class="btn btn-outline-light btn-lg submit-button">Submit</button>
+                <button id ="Rock" onclick="main(this.id)" value="Rock"   type="button"   class="btn btn-outline-light btn-lg submit-button">Submit</button>
             </div>
             <div class="content content-3">
                 <i class="fas fa-hand-paper"></i>
                 <h2>Paper</h2>
                 <p>Paper cover rock but scissors cut paper! </p>
-                <button id ="myButton" value="Submit"  type="button" class="btn btn-outline-light btn-lg submit-button">Submit</button>
+                <button id ="Paper" onclick="main(this.id)"  value="Paper"  type="button"   class="btn btn-outline-light btn-lg submit-button">Submit</button>
             </div>
         </div>
     </div>

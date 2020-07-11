@@ -97,7 +97,7 @@ body {
     font-size: 17px;
 }
 
-.content #myButton {
+.content #myButton #mySecondButton #myThirdButton {
     margin: 22px 0;
     text-decoration: none;
     text-transform: uppercase;
